@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiOperation;
 @Api(value = "/test", description = "测试")
 public class TestController {
 
-    @ApiOperation(value = "版本更新", notes = "app版本更新")
+	@ApiOperation(value = "版本更新", notes = "app版本更新")
     @RequestMapping(value = "/hello", method = { RequestMethod.POST, RequestMethod.GET })
     public String testController(HttpServletRequest request) {
         return "hello";

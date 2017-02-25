@@ -75,9 +75,9 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.common.hession</groupId>
-				<artifactId>hession-4.0.33</artifactId>
-				<version>1.0.0</version>
+				<groupId>com.caucho</groupId>
+				<artifactId>hessian</artifactId>
+				<version>4.0.38</version>
 			</dependency>
 
 			<dependency>
