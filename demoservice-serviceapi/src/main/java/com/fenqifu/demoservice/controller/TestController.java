@@ -1,13 +1,14 @@
 package com.fenqifu.demoservice.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.fenqifu.demoservice.service.IAnnoTestService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import javax.servlet.http.HttpServletRequest;
 
 /**   
  * @Title: TestController.java 
@@ -22,11 +23,17 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/test")
 @Api(value = "/test", description = "测试")
 public class TestController {
+	@Autowired
+	IAnnoTestService annoTestService ;
 
 	@ApiOperation(value = "版本更新", notes = "app版本更新")
     @RequestMapping(value = "/hello", method = { RequestMethod.POST, RequestMethod.GET })
     public String testController(HttpServletRequest request) {
         return "hello";
     }
+	
+	public String AnnoTestController(){
+		return annoTestService.sayHello();
+	}
 
 }
