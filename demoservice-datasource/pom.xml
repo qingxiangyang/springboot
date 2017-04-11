@@ -10,8 +10,6 @@
 	</parent>
 	<groupId>com.fenqifu.demoservice</groupId>
 	<artifactId>demoservice-datasource</artifactId>
-	<name>demoservice-datasource</name>
-	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>

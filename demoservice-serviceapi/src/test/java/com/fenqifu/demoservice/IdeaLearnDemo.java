@@ -7,11 +7,19 @@ import org.junit.Test;
  */
 public class IdeaLearnDemo {
     @Test
-    public  void  testNotice(){
+    public void testNotice() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("123");
-        stringBuilder.append("456");
-        System.out.print(stringBuilder.toString()+"-------------------------------------------------------------------------------------------------------------------------------");
+        stringBuilder.append("中国");
+        System.out.print(stringBuilder.toString() + "-------------------------------------------------------------------------------------------------------------------------------");
+        testMethord11();
+
 
     }
+
+    public String testMethord11() {
+        return "111";
+    }
+
+
 }
